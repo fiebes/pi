@@ -1,0 +1,161 @@
+body{
+   font-family: sans-serif;
+}
+#grafico {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#grafico div.rango_normal {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 40px;
+  left: 0;
+  background: rgba(0,240,0,0.6);
+  border-top: 2px dashed;
+  border-bottom: 2px dashed;
+  box-sizing: border-box;
+}
+#grafico div.rango_normal > p {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(0px, -50%);
+  -ms-transform: translate(0px, -50%);
+  transform: translate(0px, -50%);
+  font-size: 1em;
+  font-family: 'Oswald';
+  color: #fff;
+  text-align: right;
+}
+#grafico .numeros {
+  width: 30px;
+  background: #f1f2e2;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#grafico .numeros span {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  height: 40px;
+  background-color: white;
+}
+#grafico .indice {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  padding: 0px 0 0 30px;
+  box-sizing: border-box;
+}
+#grafico .indice div.punto {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#grafico .indice div.punto .valorPunto {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px green;
+  top: -85px;
+  left: -28px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#grafico .indice div.punto .valorPunto:after {
+  content: "";
+  border-top: 10px solid rgba(0, 30, 0, 0.5);
+  border-right: 10px solid rgba(0, 30, 0, 0);
+  border-bottom: 10px solid rgba(0, 30, 0, 0);
+  border-left: 10px solid rgba(0, 30, 0, 0);
+  position: absolute;
+  left: 25px;
+  bottom: -2s0px;
+}
+#grafico .indice div.punto .valorPunto p {
+  font-family: 'Oswald';
+  text-align: center;
+  color: #ffffff;
+}
+#grafico .indice div.punto .valorPunto p:first-child {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#grafico .indice div.punto .valorPunto p:last-child {
+  font-size: .7em;
+  font-weight: 900;
+}
+#grafico .indice div.punto .linea_punteada {
+  width: 0;
+  border-left: 1px dashed #999;
+  position: absolute;
+  top: 17px;
+  left: 7px;
+}
+#grafico .indice div.punto .animOculto {
+  top: -95px !important;
+  opacity: 0 !important;
+  visibility: hidden;
+}
+#grafico .indice div.tri {
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#grafico .indice div.lineas {
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  top: 100px;
+  left: 110px;
+  background: #000;
+  transform: rotate(0.78rad);
+}
+div.cont_fechas {
+  width: 100%;
+  height: 40px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+div.cont_fechas .fechas {
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.cont_fechas .fechas span {
+  font-size: .75em;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+}
+#instruccion{
+   width: 80%;
+   position: absolute;
+   top:0;
+   left:0;
+   padding: 10px 10% 0;
+   text-align: center;
+   line-height: 160%;
+   color: #0898a0;
+   font-weight: 700;
+}

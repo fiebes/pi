@@ -1,0 +1,41 @@
+
+.barra_superior_azul{
+  height:75px;
+  background-color: rgb(11, 94, 215);
+}
+
+.imagem_philips{
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.barra_inferior_azul{
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-top: 10%;
+  background-color: rgb(11, 94, 215);
+}
+
+.texto_superior_usuario{
+  float: right;
+  margin-right: 10px;
+  height: 75px;
+}
+
+.botao_superior_usuario{
+  background: none;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.nome_superior_usuario{
+  font-size: 18px;
+  margin-top: 20px;
+  float: right;
+  color: white !important;
+}
